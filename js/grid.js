@@ -562,21 +562,6 @@ Grid.prototype.valueSum = function() {
 }
 */
 
-// check for win
-Grid.prototype.isWin = function() {
-  var self = this;
-  for (var x=0; x<4; x++) {
-    for (var y=0; y<4; y++) {
-      if (self.cellOccupied(this.indexes[x][y])) {
-        if (self.cellContent(this.indexes[x][y]).value == 2048) {
-          return true;
-        }
-      }
-    }
-  }
-  return false;
-}
-
 //Grid.prototype.zobristTable = {}
 //for
 //Grid.prototype.hash = function() {
